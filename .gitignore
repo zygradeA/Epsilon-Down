@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -58,3 +58,25 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Epsilon Down/Library/Artifacts/1c/1c429fd04eb3ffb8109af4b36a408351
+Epsilon Down/Library/Artifacts/c2/c24101e472ff6c8de739889365132b71
+Epsilon Down/Logs/shadercompiler-AssetImportWorker0.log
+Epsilon Down/Library/Artifacts/1c/1c429fd04eb3ffb8109af4b36a408351
+Epsilon Down/Library/Artifacts/c2/c24101e472ff6c8de739889365132b71
+Epsilon Down/Library/Artifacts/1c/1c429fd04eb3ffb8109af4b36a408351
+Epsilon Down/Library/Artifacts/1c/1c429fd04eb3ffb8109af4b36a408351
+Epsilon Down/Library/Artifacts/1c/1c429fd04eb3ffb8109af4b36a408351
+Epsilon Down/Library/Artifacts/1c/1c429fd04eb3ffb8109af4b36a408351
+Epsilon Down/Library/Artifacts/1c/1c429fd04eb3ffb8109af4b36a408351
+Epsilon Down/Library/Artifacts/34/344c2f7dc0fc2030dd4c9f134eeed141
+Epsilon Down/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Flow/Framework/Variables/Obsolete/VariableUnitWidget.cs.meta
+*.meta
+*.meta
+*.meta
+*.meta
+*.meta
+*.meta
+*.meta
+*.meta
+*.meta
+*.meta
