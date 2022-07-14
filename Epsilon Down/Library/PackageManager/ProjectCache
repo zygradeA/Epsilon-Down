@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637932732708479380
-    m_Hash: 1879507409
+      ticks: 637933180128254055
+    m_Hash: 1179235663
   m_LockFileStatus:
     m_FilePath: C:/Users/victi/OneDrive/Documents/GitHub/Epsilon-Down/Epsilon Down/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637932733165773058
-    m_Hash: 1152500608
+      ticks: 637933180128254055
+    m_Hash: 4124369080
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
