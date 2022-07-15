@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 12;
     Vector3 velocity;
     bool isGrounded;
-    public float gravity = -9.81f;
+    public float gravity = -105.37f;
     public float jumpHeight = 3f;
     // Start is called before the first frame update
 
@@ -23,21 +23,43 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        if(isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move*speed*Time.deltaTime);
+        controller.Move(move * speed * Time.deltaTime);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
 
-        velocity.y += gravity*Time.deltaTime;
-        controller.Move(velocity*Time.deltaTime); 
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
+        // The Abilities and Stuff
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            jumpHeight = 3f;
+            speed = 12f;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            jumpHeight = 1.5f;
+            speed = 24;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            jumpHeight = 1;
+            speed = 6;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            jumpHeight = 9;
+            speed = 5;
+        }
     }
 }
