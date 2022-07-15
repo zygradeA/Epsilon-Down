@@ -12,6 +12,7 @@ public class BlackHoleScript : MonoBehaviour
     void Start()
     {
         scaleChange = new Vector3(0.1f, 0.1f, 0.1f);
+        Rigidbody.UseGravity(false);
     }
 
     // Update is called once per frame

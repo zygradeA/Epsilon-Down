@@ -351,6 +351,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/BlackHoleScript.cs"
 "Assets/Scripts/MouseMovement.cs"
+"Assets/Scripts/PlayerCollisiom.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0
 
