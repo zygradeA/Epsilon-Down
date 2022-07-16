@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
     public float gravity = -105.37f;
-    public float jumpHeight = 3f;
+    public float jumpHeight = 4.5f;
     // Start is called before the first frame update
 
 
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            jumpHeight = 3f;
+            jumpHeight = 4.5f;
             speed = 12f;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            jumpHeight = 1;
+            jumpHeight = 2;
             speed = 6;
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
