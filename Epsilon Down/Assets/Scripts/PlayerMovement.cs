@@ -13,10 +13,18 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     public float gravity = -105.37f;
     public float jumpHeight = 4.5f;
-    // Start is called before the first frame update
+    public float WallRunSpeed;
+    public enum MovemementState
+    {
+        walking,
+        sprinting,
+        wallrun,
+        crouching,
+        sliding,
+        air
+    }
+    public bool wallrunning;
 
-
-    // Update is called once per frame
     void Update()
     {
         isGrounded = Physics.CheckSphere(GroundCheck.position, groundDistance, groundMask);
