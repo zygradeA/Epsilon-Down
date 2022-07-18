@@ -208,14 +208,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whatisWall:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   whatisGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   wallRunForce: 7.5
-  wallCheckDistance: 0
-  minJumpHeight: 0
-  orientation: {fileID: 0}
+  wallCheckDistance: 0.7
+  minJumpHeight: 2
+  orientation: {fileID: 963194228}
 --- !u!114 &326065796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,11 +555,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d21a1edae019e114fb02bcc1a841ed16, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ac928b5060a89f45a9064584fbb7161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
-  playerBody: {fileID: 326065791}
+  playerbody: {fileID: 326065791}
 --- !u!1 &1486750561
 GameObject:
   m_ObjectHideFlags: 0
