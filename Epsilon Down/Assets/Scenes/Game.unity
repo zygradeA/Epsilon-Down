@@ -212,7 +212,7 @@ MonoBehaviour:
   whatisGround:
     serializedVersion: 2
     m_Bits: 0
-  wallRunForce: 0
+  wallRunForce: 7.5
   wallCheckDistance: 0
   minJumpHeight: 0
   orientation: {fileID: 0}

@@ -32,6 +32,14 @@ public class WallRun : MonoBehaviour
     private void Update()
     {
         CheckForWall();
+        StateMachine();
+    }
+    private void FixedUpdate()
+    {
+        if (pm.wallrunning)
+        {
+            WallRunMovement();
+        }
     }
     private void CheckForWall()
     {
@@ -48,19 +56,34 @@ public class WallRun : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
         if((wallLeft || wallRight) && verticalInput > 0 && AboveGround())
         {
+            if (!pm.wallrunning)
+            {
+                StartWallRun();
+            }
 
+            else
+            {
+                if (pm.wallrunning)
+                {
+                    StopWallRun();
+                }
+            }
         }
     }
     private void StartWallRun()
     {
-
+        pm.wallrunning = true;
     }
     private void WallRunMovement()
     {
-
+        rb.useGravity = false;
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        Vector3 wallNormal = wallRight ? rightwallhit.normal : leftwallhit.normal;
+        Vector3 wallForward = Vector3.Cross(wallNormal, transform.up);
+        rb.AddForce(wallForward*wallRunForce, ForceMode.Force);
     }
     private void StopWallRun()
     {
-
+        pm.wallrunning = false;
     }
 }
